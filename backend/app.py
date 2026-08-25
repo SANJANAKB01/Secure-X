@@ -1,5 +1,5 @@
 from flask import Flask, Response
-import cv2.cv2 as cv2
+import cv2
 from flask_cors import CORS
 import time
 import mysql.connector
