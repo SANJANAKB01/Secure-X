@@ -1,5 +1,5 @@
 Flask
-opencv-python-headless
+opencv-contrib-python-headless
 mysql-connector-python
 gunicorn
 flask-cors
