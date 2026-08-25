@@ -6,4 +6,4 @@ services:
       pip install -r requirements.txt
       npm install --prefix securex-main
       npm run build --prefix securex-main
-    startCommand: gunicorn app:app
+    startCommand: gunicorn backend.app:app
