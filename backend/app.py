@@ -1,5 +1,5 @@
 from flask import Flask, Response
-import cv2
+import cv2.cv2 as cv2
 from flask_cors import CORS
 import time
 import mysql.connector
@@ -18,7 +18,8 @@ def get_db_connection():
     return mysql.connector.connect(**db_config)
 
 # Initialize the video capture and Haar cascades
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0)
+cap = None
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
