@@ -7,8 +7,8 @@ import os
 
 app = Flask(__name__)
 # === NEW === Allow CORS from your Render URL instead of just localhost
+app.static_folder = os.path.join(os.path.dirname(__file__), '..', 'securex-main', 'build', 'static') # <--- NEW LINE
 CORS(app, origins=["http://localhost:3000", "https://secure-x.onrender.com"])
-
 # MySQL database configuration
 db_config = {
     'host': 'localhost',
