@@ -2,3 +2,4 @@ Flask
 opencv-python-headless
 mysql-connector-python
 gunicorn
+flask-cors
